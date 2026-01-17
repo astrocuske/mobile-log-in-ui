@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('Ubuntu/Ubuntu-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fffdf2;
+}
+
+.container {
+    position: relative;
+    width: 30px;
+    height: 50px;
+    background: black;
+    border-radius: 20px;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.2),10px 10px 15px rgba(0,0,0,0.2);
+}
+
+.bg-box {
+    position: absolute;
+    background: #fffdf2;
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.bg-form {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.bg-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    background: red;
+    border-radius: 5% 5% 3% 97%/ 5% 5% 0 50%;
+}
+
+.bg-form h2 {
+    position: absolute;
+    font-size: 36px;
+    margin-top: 15%;
+    margin-left: 35%;
+    font-weight: 600;
+}
+
+.bg-form p {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 30%;
+    margin-left: 25%;
+    font-weight: 600;
+}
+
+.form-box {
+    position: absolute;
+    background: #fffdf2;
+    width: 250px;
+    height: 380px;
+    top: 25%;
+    left: 7%;
+    border-radius: 15px;
+    box-shadow: -3px -3px 5px rgba(0,0,0,0.2),3px 3px 5px rgba(0,0,0,0.2);
+}
+
+.form-box .header-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-box .header-box h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.form-box input-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px 10px 15px;
+    margin-top: 10px;
+}
+
+.form-box .input-box label {
+    font-size: 12px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.form-box .input-box input {
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: -2px -2px 4px rgba(0,0,0,0.1), 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-box .input-box i {
+    position: absolute;
+    top: 57%;
+    right: 10%;
+    font-size: 15px;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.form-box .input-box input[type="email"],
+.form-box .input-box input[type="password"] {
+    padding-left: 15px;
+}
+
+.form-box .forgot-pass {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.form-box .forgot-pass p {
+    font-weight: 600;
+}
+
+.form-box .forgot-pass input[type="checkbox"] {
+    accent-color: red;
+}
+
+.form-box .forgot-pass a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.form-box .forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+.form-box .btn-login {
+    background-color: red;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.form-box .btn-login:hover {
+    background-color: darkred;
+}
+
+.form-box .btn-signup {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-box .btn-signup a {
+    text-decoration: none;
+    color: black;
+}
+
+.form-box .btn-signup a:hover {
+    text-decoration: underline;
+}
